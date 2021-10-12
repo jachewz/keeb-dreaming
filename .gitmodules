@@ -4,3 +4,6 @@
 [submodule "random-keyboard-parts"]
 	path = pcb/random-keyboard-parts
 	url = https://github.com/ai03-2725/random-keyboard-parts.pretty.git
+[submodule "pcb/Type-C.pretty"]
+	path = pcb/Type-C.pretty
+	url = https://github.com/ai03-2725/Type-C.pretty.git
