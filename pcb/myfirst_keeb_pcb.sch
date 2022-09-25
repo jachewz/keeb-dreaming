@@ -219,236 +219,6 @@ F 3 "" H 4150 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4150 1300 4150 1350
-$Comp
-L power:+3.3V #PWR0103
-U 1 1 617333BD
-P 5200 2950
-F 0 "#PWR0103" H 5200 2800 50  0001 C CNN
-F 1 "+3.3V" H 5215 3123 50  0000 C CNN
-F 2 "" H 5200 2950 50  0001 C CNN
-F 3 "" H 5200 2950 50  0001 C CNN
-	1    5200 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 2950 5200 3250
-Wire Wire Line
-	5000 3350 5000 3250
-Wire Wire Line
-	5000 3250 5100 3250
-Connection ~ 5200 3250
-Wire Wire Line
-	5200 3250 5200 3350
-Wire Wire Line
-	5100 3250 5100 3350
-Connection ~ 5100 3250
-Wire Wire Line
-	5100 3250 5200 3250
-Wire Wire Line
-	5200 3250 5300 3250
-Wire Wire Line
-	5300 3250 5300 3350
-Wire Wire Line
-	5300 3250 5400 3250
-Wire Wire Line
-	5400 3250 5400 3350
-Connection ~ 5300 3250
-Text GLabel 6300 5750 2    50   Input ~ 0
-D-
-Text GLabel 6300 5850 2    50   Input ~ 0
-D+
-Wire Wire Line
-	6300 5750 5800 5750
-Wire Wire Line
-	5800 5850 6300 5850
-$Comp
-L Device:C_Small C5
-U 1 1 6174784D
-P 4250 3350
-F 0 "C5" H 4158 3304 50  0000 R CNN
-F 1 "C_Small" H 4158 3395 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4250 3350 50  0001 C CNN
-F 3 "~" H 4250 3350 50  0001 C CNN
-	1    4250 3350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4500 3550 4250 3550
-Wire Wire Line
-	4250 3550 4250 3450
-$Comp
-L Switch:SW_Push SW2
-U 1 1 6174CC24
-P 3650 3250
-F 0 "SW2" V 3604 3398 50  0000 L CNN
-F 1 "SW_Push" V 3695 3398 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 3650 3450 50  0001 C CNN
-F 3 "~" H 3650 3450 50  0001 C CNN
-	1    3650 3250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4250 3250 4250 3050
-Wire Wire Line
-	4250 3050 3650 3050
-Wire Wire Line
-	3650 3450 3650 3550
-Wire Wire Line
-	3650 3550 4250 3550
-Connection ~ 4250 3550
-Wire Wire Line
-	3650 3050 3400 3050
-Connection ~ 3650 3050
-$Comp
-L power:GND #PWR0105
-U 1 1 6175E060
-P 3400 3200
-F 0 "#PWR0105" H 3400 2950 50  0001 C CNN
-F 1 "GND" H 3405 3027 50  0000 C CNN
-F 2 "" H 3400 3200 50  0001 C CNN
-F 3 "" H 3400 3200 50  0001 C CNN
-	1    3400 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3400 3050 3400 3200
-$Comp
-L power:+3.3V #PWR0107
-U 1 1 617619E2
-P 2500 3650
-F 0 "#PWR0107" H 2500 3500 50  0001 C CNN
-F 1 "+3.3V" H 2515 3823 50  0000 C CNN
-F 2 "" H 2500 3650 50  0001 C CNN
-F 3 "" H 2500 3650 50  0001 C CNN
-	1    2500 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 3750 2500 3650
-$Comp
-L Switch:SW_Push SW1
-U 1 1 61767483
-P 2700 3750
-F 0 "SW1" H 2700 3565 50  0000 C CNN
-F 1 "SW_Push" H 2700 3656 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 2700 3950 50  0001 C CNN
-F 3 "~" H 2700 3950 50  0001 C CNN
-	1    2700 3750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 6176B6ED
-P 3000 3850
-F 0 "R3" V 2804 3850 50  0000 C CNN
-F 1 "10k" V 2895 3850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3000 3850 50  0001 C CNN
-F 3 "~" H 3000 3850 50  0001 C CNN
-	1    3000 3850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2900 3750 3000 3750
-Connection ~ 3000 3750
-Wire Wire Line
-	3000 3950 3000 4000
-$Comp
-L power:GND #PWR0108
-U 1 1 61776459
-P 3000 4000
-F 0 "#PWR0108" H 3000 3750 50  0001 C CNN
-F 1 "GND" H 3005 3827 50  0000 C CNN
-F 2 "" H 3000 4000 50  0001 C CNN
-F 3 "" H 3000 4000 50  0001 C CNN
-	1    3000 4000
-	1    0    0    -1  
-$EndComp
-Text GLabel 6300 5950 2    50   Input ~ 0
-SWDIO
-Wire Wire Line
-	5800 5950 6300 5950
-Text GLabel 6300 6050 2    50   Input ~ 0
-SWDCLK
-Wire Wire Line
-	5800 6050 6300 6050
-Text GLabel 6300 6150 2    50   Input ~ 0
-EXTRA_PIN_PA15
-$Comp
-L power:GND #PWR0109
-U 1 1 617838D3
-P 5000 6500
-F 0 "#PWR0109" H 5000 6250 50  0001 C CNN
-F 1 "GND" H 5005 6327 50  0000 C CNN
-F 2 "" H 5000 6500 50  0001 C CNN
-F 3 "" H 5000 6500 50  0001 C CNN
-	1    5000 6500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 6350 5000 6400
-Wire Wire Line
-	5000 6400 5100 6400
-Wire Wire Line
-	5100 6400 5100 6350
-Connection ~ 5000 6400
-Wire Wire Line
-	5000 6400 5000 6500
-Wire Wire Line
-	5100 6400 5200 6400
-Wire Wire Line
-	5200 6400 5200 6350
-Connection ~ 5100 6400
-Wire Wire Line
-	5200 6400 5300 6400
-Wire Wire Line
-	5300 6400 5300 6350
-Connection ~ 5200 6400
-Wire Wire Line
-	3000 3750 4500 3750
-Text GLabel 6300 4650 2    50   Input ~ 0
-ROW0
-Text GLabel 6300 4750 2    50   Input ~ 0
-ROW1
-Wire Wire Line
-	6300 4650 5800 4650
-Wire Wire Line
-	5800 4750 6300 4750
-Text GLabel 6300 4850 2    50   Input ~ 0
-ROW2
-Wire Wire Line
-	5800 4850 6300 4850
-Text GLabel 6300 4950 2    50   Input ~ 0
-ROW3
-Wire Wire Line
-	5800 4950 6300 4950
-Text GLabel 6300 5050 2    50   Input ~ 0
-Audio1
-Text GLabel 6300 5150 2    50   Input ~ 0
-Audio2
-Wire Wire Line
-	6300 5050 5800 5050
-Wire Wire Line
-	5800 5150 6300 5150
-Text GLabel 6300 5250 2    50   Input ~ 0
-COL0
-Wire Wire Line
-	5800 5250 6300 5250
-Text GLabel 6300 5350 2    50   Input ~ 0
-COL1
-Wire Wire Line
-	5800 5350 6300 5350
-Text GLabel 6300 5450 2    50   Input ~ 0
-COL2
-Text GLabel 6300 5550 2    50   Input ~ 0
-COL3
-Text GLabel 6300 5650 2    50   Input ~ 0
-COL4
-Wire Wire Line
-	6300 5450 5800 5450
-Wire Wire Line
-	6300 5550 5800 5550
-Wire Wire Line
-	6300 5650 5800 5650
 Text GLabel 4000 5250 0    50   Input ~ 0
 EXTRA_PIN_PB6
 Text GLabel 4000 5150 0    50   Input ~ 0
@@ -483,22 +253,12 @@ Text GLabel 4000 5750 0    50   Input ~ 0
 EXTRA_PIN_PB11
 Text GLabel 4000 5950 0    50   Input ~ 0
 EXTRA_PIN_PB13
-Text GLabel 4000 6050 0    50   Input ~ 0
-EXTRA_PIN_PB14
-Text GLabel 4000 6150 0    50   Input ~ 0
-EXTRA_PIN_PB15
 Wire Wire Line
 	4000 5750 4500 5750
 Wire Wire Line
 	4500 5850 4000 5850
 Wire Wire Line
 	4000 5950 4500 5950
-Wire Wire Line
-	4500 6050 4000 6050
-Wire Wire Line
-	4000 6150 4500 6150
-Wire Wire Line
-	5800 6150 6300 6150
 Wire Wire Line
 	4500 4950 4000 4950
 Wire Wire Line
@@ -717,17 +477,6 @@ U 616F6677
 F0 "matrix" 50
 F1 "matrix.sch" 50
 $EndSheet
-$Comp
-L MCU_ST_STM32F3:STM32F303CCTx U3
-U 1 1 6171FCF2
-P 5200 4850
-F 0 "U3" H 5150 4700 50  0000 C CNN
-F 1 "STM32F303CCTx" H 5150 4600 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4600 3450 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00058181.pdf" H 5200 4850 50  0001 C CNN
-	1    5200 4850
-	1    0    0    -1  
-$EndComp
 Text GLabel 4000 3950 0    50   Input ~ 0
 COL10
 Wire Wire Line
@@ -746,4 +495,284 @@ Wire Wire Line
 	4000 4450 4500 4450
 Text GLabel 4000 4250 0    50   Input ~ 0
 COL12
+Wire Wire Line
+	3000 3450 4500 3450
+Connection ~ 3000 3450
+Wire Wire Line
+	2900 3450 3000 3450
+$Comp
+L Device:R_Small R3
+U 1 1 6176B6ED
+P 3000 3550
+F 0 "R3" V 2804 3550 50  0000 C CNN
+F 1 "10k" V 2895 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3000 3550 50  0001 C CNN
+F 3 "~" H 3000 3550 50  0001 C CNN
+	1    3000 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 61767483
+P 2700 3450
+F 0 "SW1" H 2700 3265 50  0000 C CNN
+F 1 "SW_Push" H 2700 3356 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 2700 3650 50  0001 C CNN
+F 3 "~" H 2700 3650 50  0001 C CNN
+	1    2700 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 3450 2500 3350
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 617619E2
+P 2500 3350
+F 0 "#PWR0107" H 2500 3200 50  0001 C CNN
+F 1 "+3.3V" H 2515 3523 50  0000 C CNN
+F 2 "" H 2500 3350 50  0001 C CNN
+F 3 "" H 2500 3350 50  0001 C CNN
+	1    2500 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2750 3400 2900
+$Comp
+L power:GND #PWR0105
+U 1 1 6175E060
+P 3400 2900
+F 0 "#PWR0105" H 3400 2650 50  0001 C CNN
+F 1 "GND" H 3405 2727 50  0000 C CNN
+F 2 "" H 3400 2900 50  0001 C CNN
+F 3 "" H 3400 2900 50  0001 C CNN
+	1    3400 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 2750
+Wire Wire Line
+	3650 2750 3400 2750
+Connection ~ 4250 3250
+Wire Wire Line
+	3650 3250 4250 3250
+Wire Wire Line
+	3650 3150 3650 3250
+Wire Wire Line
+	4250 2750 3650 2750
+Wire Wire Line
+	4250 2950 4250 2750
+$Comp
+L Switch:SW_Push SW2
+U 1 1 6174CC24
+P 3650 2950
+F 0 "SW2" V 3604 3098 50  0000 L CNN
+F 1 "SW_Push" V 3695 3098 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 3650 3150 50  0001 C CNN
+F 3 "~" H 3650 3150 50  0001 C CNN
+	1    3650 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 3250 4250 3150
+Wire Wire Line
+	4500 3250 4250 3250
+$Comp
+L Device:C_Small C5
+U 1 1 6174784D
+P 4250 3050
+F 0 "C5" H 4158 3004 50  0000 R CNN
+F 1 "100uF" H 4158 3095 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4250 3050 50  0001 C CNN
+F 3 "~" H 4250 3050 50  0001 C CNN
+	1    4250 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 3650 3000 3700
+$Comp
+L power:GND #PWR0108
+U 1 1 61776459
+P 3000 3700
+F 0 "#PWR0108" H 3000 3450 50  0001 C CNN
+F 1 "GND" H 3005 3527 50  0000 C CNN
+F 2 "" H 3000 3700 50  0001 C CNN
+F 3 "" H 3000 3700 50  0001 C CNN
+	1    3000 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 6300 5550 2    50   Input ~ 0
+D-
+Text GLabel 6300 5650 2    50   Input ~ 0
+D+
+Wire Wire Line
+	6300 5550 5800 5550
+Wire Wire Line
+	5800 5650 6300 5650
+Text GLabel 6300 5750 2    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	5800 5750 6300 5750
+Text GLabel 6300 5850 2    50   Input ~ 0
+SWDCLK
+Wire Wire Line
+	5800 5850 6300 5850
+Text GLabel 6300 5950 2    50   Input ~ 0
+EXTRA_PIN_PA15
+Text GLabel 6300 4450 2    50   Input ~ 0
+ROW0
+Text GLabel 6300 4550 2    50   Input ~ 0
+ROW1
+Wire Wire Line
+	6300 4450 5800 4450
+Wire Wire Line
+	5800 4550 6300 4550
+Text GLabel 6300 4650 2    50   Input ~ 0
+ROW2
+Wire Wire Line
+	5800 4650 6300 4650
+Text GLabel 6300 4750 2    50   Input ~ 0
+ROW3
+Wire Wire Line
+	5800 4750 6300 4750
+Text GLabel 6300 4850 2    50   Input ~ 0
+Audio1
+Text GLabel 6300 4950 2    50   Input ~ 0
+Audio2
+Wire Wire Line
+	6300 4850 5800 4850
+Wire Wire Line
+	5800 4950 6300 4950
+Text GLabel 6300 5050 2    50   Input ~ 0
+COL0
+Wire Wire Line
+	5800 5050 6300 5050
+Text GLabel 6300 5150 2    50   Input ~ 0
+COL1
+Wire Wire Line
+	5800 5150 6300 5150
+Text GLabel 6300 5250 2    50   Input ~ 0
+COL2
+Text GLabel 6300 5350 2    50   Input ~ 0
+COL3
+Text GLabel 6300 5450 2    50   Input ~ 0
+COL4
+Wire Wire Line
+	6300 5250 5800 5250
+Wire Wire Line
+	6300 5350 5800 5350
+Wire Wire Line
+	6300 5450 5800 5450
+Wire Wire Line
+	5800 5950 6300 5950
+Connection ~ 5200 6200
+Wire Wire Line
+	5300 6200 5300 6150
+Wire Wire Line
+	5200 6200 5300 6200
+Connection ~ 5100 6200
+Wire Wire Line
+	5200 6200 5200 6150
+Wire Wire Line
+	5100 6200 5200 6200
+Wire Wire Line
+	5000 6200 5000 6300
+Connection ~ 5000 6200
+Wire Wire Line
+	5100 6200 5100 6150
+Wire Wire Line
+	5000 6200 5100 6200
+Wire Wire Line
+	5000 6150 5000 6200
+$Comp
+L power:GND #PWR0109
+U 1 1 617838D3
+P 5000 6300
+F 0 "#PWR0109" H 5000 6050 50  0001 C CNN
+F 1 "GND" H 5005 6127 50  0000 C CNN
+F 2 "" H 5000 6300 50  0001 C CNN
+F 3 "" H 5000 6300 50  0001 C CNN
+	1    5000 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM32F4:STM32F410CBTx U3
+U 1 1 63312226
+P 5200 4550
+F 0 "U3" H 5200 4650 50  0000 C CNN
+F 1 "STM32F410CBTx" H 5200 4550 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4600 3050 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00214043.pdf" H 5200 4550 50  0001 C CNN
+	1    5200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 617333BD
+P 5200 2650
+F 0 "#PWR0103" H 5200 2500 50  0001 C CNN
+F 1 "+3.3V" H 5215 2823 50  0000 C CNN
+F 2 "" H 5200 2650 50  0001 C CNN
+F 3 "" H 5200 2650 50  0001 C CNN
+	1    5200 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2950 5100 2950
+Connection ~ 5200 2950
+Wire Wire Line
+	5200 2950 5200 3050
+Wire Wire Line
+	5100 2950 5100 3050
+Connection ~ 5100 2950
+Wire Wire Line
+	5100 2950 5200 2950
+Wire Wire Line
+	5200 2950 5300 2950
+Wire Wire Line
+	5300 2950 5300 3050
+Wire Wire Line
+	5300 2950 5400 2950
+Wire Wire Line
+	5400 2950 5400 3050
+Connection ~ 5300 2950
+Wire Wire Line
+	5000 3050 5000 2950
+Wire Wire Line
+	5200 2650 5200 2950
+$Comp
+L power:+3.3V #PWR0113
+U 1 1 63456B4D
+P 4350 3650
+F 0 "#PWR0113" H 4350 3500 50  0001 C CNN
+F 1 "+3.3V" H 4150 3700 50  0000 C CNN
+F 2 "" H 4350 3650 50  0001 C CNN
+F 3 "" H 4350 3650 50  0001 C CNN
+	1    4350 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3650 4500 3650
+$Comp
+L Device:C_Small C9
+U 1 1 6345D5F5
+P 3500 3850
+F 0 "C9" H 3500 4050 50  0000 L CNN
+F 1 "100nF" H 3500 4000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3500 3850 50  0001 C CNN
+F 3 "~" H 3500 3850 50  0001 C CNN
+	1    3500 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3750 4500 3750
+$Comp
+L power:GND #PWR0114
+U 1 1 63463206
+P 3500 3950
+F 0 "#PWR0114" H 3500 3700 50  0001 C CNN
+F 1 "GND" H 3505 3777 50  0000 C CNN
+F 2 "" H 3500 3950 50  0001 C CNN
+F 3 "" H 3500 3950 50  0001 C CNN
+	1    3500 3950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
