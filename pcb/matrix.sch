@@ -958,10 +958,6 @@ Connection ~ 6100 3900
 Connection ~ 5450 3900
 Connection ~ 4800 3900
 Connection ~ 4150 3900
-Wire Wire Line
-	3000 4300 3450 4300
-Wire Wire Line
-	3700 4300 3450 4300
 Connection ~ 3450 3900
 Connection ~ 2800 3900
 Connection ~ 2150 3900
@@ -1315,7 +1311,7 @@ Wire Wire Line
 Wire Wire Line
 	2150 5500 2000 5500
 Text GLabel 800  5900 0    50   Input ~ 0
-ROW3
+ROW4
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX5
 U 1 1 61803E18
@@ -1355,7 +1351,6 @@ Wire Wire Line
 Wire Wire Line
 	7400 4650 7400 5500
 Connection ~ 7400 4650
-Connection ~ 3450 4300
 Wire Wire Line
 	3450 4300 3450 4650
 Connection ~ 5650 3450
@@ -2063,8 +2058,6 @@ F 3 "~" H 10350 2610 50  0001 C CNN
 	1    10350 2350
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10250 2700 10050 2700
 Connection ~ 9550 2700
 Wire Wire Line
 	10450 2700 10650 2700
@@ -2084,10 +2077,8 @@ F 3 "~" V 10150 2700 50  0001 C CNN
 	1    10150 2700
 	1    0    0    -1  
 $EndComp
-Connection ~ 10250 2700
 Wire Wire Line
 	10050 2700 9550 2700
-Connection ~ 10050 2700
 Wire Wire Line
 	10250 2650 10250 2700
 Wire Wire Line
@@ -2222,4 +2213,6 @@ Connection ~ 1500 4650
 Wire Wire Line
 	1050 5050 2350 5050
 Connection ~ 2350 5050
+Wire Wire Line
+	3000 4300 3700 4300
 $EndSCHEMATC

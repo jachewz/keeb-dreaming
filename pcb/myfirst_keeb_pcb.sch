@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:VCC #PWR0104
-U 1 1 61669D46
-P 2600 1000
-F 0 "#PWR0104" H 2600 850 50  0001 C CNN
-F 1 "VCC" H 2617 1173 50  0000 C CNN
-F 2 "" H 2600 1000 50  0001 C CNN
-F 3 "" H 2600 1000 50  0001 C CNN
-	1    2600 1000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Polyfuse_Small F1
 U 1 1 6166BA35
 P 3350 1000
@@ -76,7 +65,6 @@ Wire Wire Line
 	1600 5750 1900 5750
 Wire Wire Line
 	1400 1800 1350 1800
-Connection ~ 1950 1000
 Wire Wire Line
 	1950 1000 1950 1900
 Wire Wire Line
@@ -156,10 +144,6 @@ Wire Wire Line
 	1750 1500 1750 1300
 Wire Wire Line
 	1350 1500 1750 1500
-Text GLabel 2650 2100 2    50   Input ~ 0
-SHIELD
-Text GLabel 1400 6900 0    50   Input ~ 0
-SHIELD
 $Comp
 L Power_Protection:SRV05-4 U1
 U 1 1 61698E51
@@ -174,14 +158,10 @@ $EndComp
 Wire Wire Line
 	1600 6750 1600 6900
 Wire Wire Line
-	1600 6900 1400 6900
-Wire Wire Line
 	1350 2100 1850 2100
 Connection ~ 1850 2100
 Wire Wire Line
 	1850 2100 1850 2450
-Wire Wire Line
-	1850 2100 2650 2100
 $Comp
 L Regulator_Linear:MCP1700-3302E_SOT23 U2
 U 1 1 616C743D
@@ -224,7 +204,7 @@ EXTRA_PIN_PB6
 Text GLabel 4000 5150 0    50   Input ~ 0
 EXTRA_PIN_PB5
 Text GLabel 4000 5050 0    50   Input ~ 0
-COL9
+ROW4
 Wire Wire Line
 	4000 5050 4500 5050
 Wire Wire Line
@@ -244,15 +224,15 @@ EXTRA_PIN_PB7
 Text GLabel 4000 5450 0    50   Input ~ 0
 EXTRA_PIN_PB8
 Text GLabel 4000 5550 0    50   Input ~ 0
-EXTRA_PIN_PB9
+COL8
 Text GLabel 4000 5650 0    50   Input ~ 0
-EXTRA_PIN_PB10
+ROW3
 Text GLabel 4000 5850 0    50   Input ~ 0
-EXTRA_PIN_PB12
+COL13
 Text GLabel 4000 5750 0    50   Input ~ 0
-EXTRA_PIN_PB11
+COL14
 Text GLabel 4000 5950 0    50   Input ~ 0
-EXTRA_PIN_PB13
+COL12
 Wire Wire Line
 	4000 5750 4500 5750
 Wire Wire Line
@@ -274,14 +254,13 @@ COL6
 Text GLabel 4000 4850 0    50   Input ~ 0
 COL7
 Text GLabel 4000 4950 0    50   Input ~ 0
-COL8
-Text GLabel 4000 4050 0    50   Input ~ 0
-COL11
+ENCODER_B
+Text GLabel 4300 4050 0    50   Input ~ 0
+EXTRA_PIN_PH1
 Wire Wire Line
 	3200 1000 3200 1350
 Wire Wire Line
 	3200 1350 3400 1350
-Connection ~ 3200 1000
 Wire Wire Line
 	3200 1000 3250 1000
 Connection ~ 4150 1350
@@ -319,11 +298,6 @@ Connection ~ 4900 1000
 Wire Wire Line
 	4900 1000 5000 1000
 Wire Wire Line
-	1950 1000 2600 1000
-Connection ~ 2600 1000
-Wire Wire Line
-	2600 1000 3200 1000
-Wire Wire Line
 	3600 1350 3650 1350
 Wire Wire Line
 	3450 1000 3650 1000
@@ -353,17 +327,6 @@ Wire Wire Line
 Connection ~ 1600 4350
 Wire Wire Line
 	1600 4350 1600 4450
-$Comp
-L power:GND #PWR0111
-U 1 1 6167BFA6
-P 1600 4450
-F 0 "#PWR0111" H 1600 4200 50  0001 C CNN
-F 1 "GND" H 1605 4277 50  0000 C CNN
-F 2 "" H 1600 4450 50  0001 C CNN
-F 3 "" H 1600 4450 50  0001 C CNN
-	1    1600 4450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1600 4150 1800 4150
 Connection ~ 1600 4150
@@ -477,24 +440,24 @@ U 616F6677
 F0 "matrix" 50
 F1 "matrix.sch" 50
 $EndSheet
-Text GLabel 4000 3950 0    50   Input ~ 0
-COL10
+Text GLabel 4300 3950 0    50   Input ~ 0
+EXTRA_PIN_PH0
 Wire Wire Line
-	4000 3950 4500 3950
+	4200 3950 4500 3950
 Wire Wire Line
 	4000 4050 4500 4050
 Wire Wire Line
 	4000 4250 4500 4250
 Text GLabel 4000 4350 0    50   Input ~ 0
-COL13
+EXTRA_PIN_PC14
 Text GLabel 4000 4450 0    50   Input ~ 0
-COL14
+EXTRA_PIN_PC15
 Wire Wire Line
 	4000 4350 4500 4350
 Wire Wire Line
 	4000 4450 4500 4450
 Text GLabel 4000 4250 0    50   Input ~ 0
-COL12
+EXTRA_PIN_PC13
 Wire Wire Line
 	3000 3450 4500 3450
 Connection ~ 3000 3450
@@ -616,7 +579,7 @@ SWDCLK
 Wire Wire Line
 	5800 5850 6300 5850
 Text GLabel 6300 5950 2    50   Input ~ 0
-EXTRA_PIN_PA15
+ENCODER_A
 Text GLabel 6300 4450 2    50   Input ~ 0
 ROW0
 Text GLabel 6300 4550 2    50   Input ~ 0
@@ -630,31 +593,25 @@ ROW2
 Wire Wire Line
 	5800 4650 6300 4650
 Text GLabel 6300 4750 2    50   Input ~ 0
-ROW3
+COL0
 Wire Wire Line
 	5800 4750 6300 4750
 Text GLabel 6300 4850 2    50   Input ~ 0
-Audio1
+COL1
 Text GLabel 6300 4950 2    50   Input ~ 0
-Audio2
+COL2
 Wire Wire Line
 	6300 4850 5800 4850
 Wire Wire Line
 	5800 4950 6300 4950
 Text GLabel 6300 5050 2    50   Input ~ 0
-COL0
+COL3
 Wire Wire Line
 	5800 5050 6300 5050
-Text GLabel 6300 5150 2    50   Input ~ 0
-COL1
 Wire Wire Line
 	5800 5150 6300 5150
-Text GLabel 6300 5250 2    50   Input ~ 0
-COL2
-Text GLabel 6300 5350 2    50   Input ~ 0
-COL3
 Text GLabel 6300 5450 2    50   Input ~ 0
-COL4
+COL9
 Wire Wire Line
 	6300 5250 5800 5250
 Wire Wire Line
@@ -775,4 +732,50 @@ F 3 "" H 3500 3950 50  0001 C CNN
 	1    3500 3950
 	1    0    0    -1  
 $EndComp
+Connection ~ 3200 1000
+Connection ~ 1950 1000
+Wire Wire Line
+	2600 1000 3200 1000
+Connection ~ 2600 1000
+Wire Wire Line
+	1950 1000 2600 1000
+$Comp
+L power:VCC #PWR0104
+U 1 1 61669D46
+P 2600 1000
+F 0 "#PWR0104" H 2600 850 50  0001 C CNN
+F 1 "VCC" H 2617 1173 50  0000 C CNN
+F 2 "" H 2600 1000 50  0001 C CNN
+F 3 "" H 2600 1000 50  0001 C CNN
+	1    2600 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 6167BFA6
+P 1600 4450
+F 0 "#PWR0111" H 1600 4200 50  0001 C CNN
+F 1 "GND" H 1605 4277 50  0000 C CNN
+F 2 "" H 1600 4450 50  0001 C CNN
+F 3 "" H 1600 4450 50  0001 C CNN
+	1    1600 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 63EF31BB
+P 1600 6900
+F 0 "#PWR0115" H 1600 6650 50  0001 C CNN
+F 1 "GND" H 1605 6727 50  0000 C CNN
+F 2 "" H 1600 6900 50  0001 C CNN
+F 3 "" H 1600 6900 50  0001 C CNN
+	1    1600 6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 6300 5150 2    50   Input ~ 0
+COL4
+Text GLabel 6300 5250 2    50   Input ~ 0
+COL11
+Text GLabel 6300 5350 2    50   Input ~ 0
+COL10
 $EndSCHEMATC
