@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 1998)
+    (drawings 2000)
     (tracks 1037)
     (zones 0)
     (modules 155)
@@ -6537,6 +6537,12 @@
     )
   )
 
+  (gr_text Zap! (at 65.6 127.6) (layer F.SilkS) (tstamp 63F4AC45)
+    (effects (font (size 8 8) (thickness 1)))
+  )
+  (gr_text Zap! (at 65.6 127.6) (layer B.SilkS)
+    (effects (font (size 8 8) (thickness 1) italic) (justify mirror))
+  )
   (gr_line (start 255.12424 32.13196) (end 255.44824 32.07896) (layer Dwgs.User) (width 0.2))
   (gr_line (start 255.44824 32.07896) (end 255.74024 31.93096) (layer Dwgs.User) (width 0.2))
   (gr_line (start 359.27224 31.93096) (end 359.56624 32.07896) (layer Dwgs.User) (width 0.2))
