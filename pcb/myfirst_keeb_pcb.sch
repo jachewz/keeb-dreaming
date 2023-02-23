@@ -341,9 +341,6 @@ Connection ~ 1400 4350
 Wire Wire Line
 	1000 4350 1400 4350
 Wire Wire Line
-	1800 4150 2200 4150
-Connection ~ 1800 4150
-Wire Wire Line
 	1400 4150 1600 4150
 Connection ~ 1400 4150
 Wire Wire Line
@@ -443,10 +440,6 @@ $EndSheet
 Text GLabel 4300 3950 0    50   Input ~ 0
 EXTRA_PIN_PH0
 Wire Wire Line
-	4200 3950 4500 3950
-Wire Wire Line
-	4000 4050 4500 4050
-Wire Wire Line
 	4000 4250 4500 4250
 Text GLabel 4000 4350 0    50   Input ~ 0
 EXTRA_PIN_PC14
@@ -458,110 +451,6 @@ Wire Wire Line
 	4000 4450 4500 4450
 Text GLabel 4000 4250 0    50   Input ~ 0
 EXTRA_PIN_PC13
-Wire Wire Line
-	3000 3450 4500 3450
-Connection ~ 3000 3450
-Wire Wire Line
-	2900 3450 3000 3450
-$Comp
-L Device:R_Small R3
-U 1 1 6176B6ED
-P 3000 3550
-F 0 "R3" V 2804 3550 50  0000 C CNN
-F 1 "10k" V 2895 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3000 3550 50  0001 C CNN
-F 3 "~" H 3000 3550 50  0001 C CNN
-	1    3000 3550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Switch:SW_Push SW1
-U 1 1 61767483
-P 2700 3450
-F 0 "SW1" H 2700 3265 50  0000 C CNN
-F 1 "SW_Push" H 2700 3356 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 2700 3650 50  0001 C CNN
-F 3 "~" H 2700 3650 50  0001 C CNN
-	1    2700 3450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2500 3450 2500 3350
-$Comp
-L power:+3.3V #PWR0107
-U 1 1 617619E2
-P 2500 3350
-F 0 "#PWR0107" H 2500 3200 50  0001 C CNN
-F 1 "+3.3V" H 2515 3523 50  0000 C CNN
-F 2 "" H 2500 3350 50  0001 C CNN
-F 3 "" H 2500 3350 50  0001 C CNN
-	1    2500 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3400 2750 3400 2900
-$Comp
-L power:GND #PWR0105
-U 1 1 6175E060
-P 3400 2900
-F 0 "#PWR0105" H 3400 2650 50  0001 C CNN
-F 1 "GND" H 3405 2727 50  0000 C CNN
-F 2 "" H 3400 2900 50  0001 C CNN
-F 3 "" H 3400 2900 50  0001 C CNN
-	1    3400 2900
-	1    0    0    -1  
-$EndComp
-Connection ~ 3650 2750
-Wire Wire Line
-	3650 2750 3400 2750
-Connection ~ 4250 3250
-Wire Wire Line
-	3650 3250 4250 3250
-Wire Wire Line
-	3650 3150 3650 3250
-Wire Wire Line
-	4250 2750 3650 2750
-Wire Wire Line
-	4250 2950 4250 2750
-$Comp
-L Switch:SW_Push SW2
-U 1 1 6174CC24
-P 3650 2950
-F 0 "SW2" V 3604 3098 50  0000 L CNN
-F 1 "SW_Push" V 3695 3098 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 3650 3150 50  0001 C CNN
-F 3 "~" H 3650 3150 50  0001 C CNN
-	1    3650 2950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4250 3250 4250 3150
-Wire Wire Line
-	4500 3250 4250 3250
-$Comp
-L Device:C_Small C5
-U 1 1 6174784D
-P 4250 3050
-F 0 "C5" H 4158 3004 50  0000 R CNN
-F 1 "100uF" H 4158 3095 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4250 3050 50  0001 C CNN
-F 3 "~" H 4250 3050 50  0001 C CNN
-	1    4250 3050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3000 3650 3000 3700
-$Comp
-L power:GND #PWR0108
-U 1 1 61776459
-P 3000 3700
-F 0 "#PWR0108" H 3000 3450 50  0001 C CNN
-F 1 "GND" H 3005 3527 50  0000 C CNN
-F 2 "" H 3000 3700 50  0001 C CNN
-F 3 "" H 3000 3700 50  0001 C CNN
-	1    3000 3700
-	1    0    0    -1  
-$EndComp
 Text GLabel 6300 5550 2    50   Input ~ 0
 D-
 Text GLabel 6300 5650 2    50   Input ~ 0
@@ -648,17 +537,6 @@ F 1 "GND" H 5005 6127 50  0000 C CNN
 F 2 "" H 5000 6300 50  0001 C CNN
 F 3 "" H 5000 6300 50  0001 C CNN
 	1    5000 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCU_ST_STM32F4:STM32F410CBTx U3
-U 1 1 63312226
-P 5200 4550
-F 0 "U3" H 5200 4650 50  0000 C CNN
-F 1 "STM32F410CBTx" H 5200 4550 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4600 3050 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00214043.pdf" H 5200 4550 50  0001 C CNN
-	1    5200 4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -778,4 +656,191 @@ Text GLabel 6300 5250 2    50   Input ~ 0
 COL11
 Text GLabel 6300 5350 2    50   Input ~ 0
 COL10
+Connection ~ 1800 4150
+Wire Wire Line
+	1800 4150 2200 4150
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J1
+U 1 1 63FCB6E8
+P 7350 2900
+F 0 "J1" H 6907 2946 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 6907 2855 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 7350 2900 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 7000 1650 50  0001 C CNN
+	1    7350 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 1000 9000 1150
+$Comp
+L power:GND #PWR0105
+U 1 1 6175E060
+P 9000 1150
+F 0 "#PWR0105" H 9000 900 50  0001 C CNN
+F 1 "GND" H 9005 977 50  0000 C CNN
+F 2 "" H 9000 1150 50  0001 C CNN
+F 3 "" H 9000 1150 50  0001 C CNN
+	1    9000 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 6174784D
+P 9950 1000
+F 0 "C5" H 9858 954 50  0000 R CNN
+F 1 "100uF" H 9858 1045 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9950 1000 50  0001 C CNN
+F 3 "~" H 9950 1000 50  0001 C CNN
+	1    9950 1000
+	0    -1   1    0   
+$EndComp
+Text GLabel 8350 2800 2    50   Input ~ 0
+SWDCLK
+Text GLabel 8350 2900 2    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	4500 3950 4300 3950
+Wire Wire Line
+	4500 4050 4300 4050
+Text GLabel 10450 1000 2    50   Input ~ 0
+NRST
+Text GLabel 4300 3250 0    50   Input ~ 0
+NRST
+$Comp
+L MCU_ST_STM32F4:STM32F410CBTx U3
+U 1 1 63312226
+P 5200 4550
+F 0 "U3" H 5200 4650 50  0000 C CNN
+F 1 "STM32F410CBTx" H 5200 4550 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4600 3050 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00214043.pdf" H 5200 4550 50  0001 C CNN
+	1    5200 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3250 4500 3250
+Text GLabel 8350 2600 2    50   Input ~ 0
+NRST
+Wire Wire Line
+	7850 2600 8350 2600
+Wire Wire Line
+	8350 2800 7850 2800
+$Comp
+L power:+3.3V #PWR0117
+U 1 1 6417CFE1
+P 7350 2200
+F 0 "#PWR0117" H 7350 2050 50  0001 C CNN
+F 1 "+3.3V" H 7365 2373 50  0000 C CNN
+F 2 "" H 7350 2200 50  0001 C CNN
+F 3 "" H 7350 2200 50  0001 C CNN
+	1    7350 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2200 7350 2300
+$Comp
+L power:GND #PWR0118
+U 1 1 64182EAD
+P 7350 3750
+F 0 "#PWR0118" H 7350 3500 50  0001 C CNN
+F 1 "GND" H 7355 3577 50  0000 C CNN
+F 2 "" H 7350 3750 50  0001 C CNN
+F 3 "" H 7350 3750 50  0001 C CNN
+	1    7350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 3500 7250 3650
+Wire Wire Line
+	7250 3650 7350 3650
+Wire Wire Line
+	7350 3500 7350 3650
+Connection ~ 7350 3650
+Wire Wire Line
+	7350 3650 7350 3750
+Text GLabel 10450 1650 2    50   Input ~ 0
+BOOT0
+Text GLabel 4300 3450 0    50   Input ~ 0
+BOOT0
+Wire Wire Line
+	4300 3450 4500 3450
+$Comp
+L power:GND #PWR0108
+U 1 1 61776459
+P 8950 1900
+F 0 "#PWR0108" H 8950 1650 50  0001 C CNN
+F 1 "GND" H 8955 1727 50  0000 C CNN
+F 2 "" H 8950 1900 50  0001 C CNN
+F 3 "" H 8950 1900 50  0001 C CNN
+	1    8950 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 1850 8950 1900
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 617619E2
+P 8450 1550
+F 0 "#PWR0107" H 8450 1400 50  0001 C CNN
+F 1 "+3.3V" H 8465 1723 50  0000 C CNN
+F 2 "" H 8450 1550 50  0001 C CNN
+F 3 "" H 8450 1550 50  0001 C CNN
+	1    8450 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 1650 8450 1550
+$Comp
+L Switch:SW_Push SW1
+U 1 1 61767483
+P 8650 1650
+F 0 "SW1" H 8650 1465 50  0000 C CNN
+F 1 "SW_Push" H 8650 1556 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 8650 1850 50  0001 C CNN
+F 3 "~" H 8650 1850 50  0001 C CNN
+	1    8650 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 6176B6ED
+P 8950 1750
+F 0 "R3" V 8754 1750 50  0000 C CNN
+F 1 "10k" V 8845 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8950 1750 50  0001 C CNN
+F 3 "~" H 8950 1750 50  0001 C CNN
+	1    8950 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8850 1650 8950 1650
+Connection ~ 8950 1650
+Wire Wire Line
+	7850 2900 8350 2900
+$Comp
+L Transistor_BJT:DTC123J Q1
+U 1 1 641F8900
+P 9400 1100
+F 0 "Q1" V 9725 1100 50  0000 C CNN
+F 1 "DTC123J" V 9634 1100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9400 1100 50  0001 L CNN
+F 3 "" H 9400 1100 50  0001 L CNN
+	1    9400 1100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9000 1000 9200 1000
+Wire Wire Line
+	9600 1000 9850 1000
+Wire Wire Line
+	8950 1650 9400 1650
+Wire Wire Line
+	9400 1350 9400 1650
+Connection ~ 9400 1650
+Wire Wire Line
+	9400 1650 10450 1650
+Wire Wire Line
+	10450 1000 10050 1000
+NoConn ~ 7850 3000
+NoConn ~ 7850 3100
 $EndSCHEMATC
