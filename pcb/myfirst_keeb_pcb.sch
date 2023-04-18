@@ -431,12 +431,6 @@ F 3 "~" H 2400 1300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1750 1300 2300 1300
-$Sheet
-S 9350 4300 800  800 
-U 616F6677
-F0 "matrix" 50
-F1 "matrix.sch" 50
-$EndSheet
 Text GLabel 4300 3950 0    50   Input ~ 0
 EXTRA_PIN_PH0
 Wire Wire Line
@@ -843,4 +837,98 @@ Wire Wire Line
 	10450 1000 10050 1000
 NoConn ~ 7850 3000
 NoConn ~ 7850 3100
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 643FA98E
+P 8000 4550
+F 0 "H3" H 8100 4596 50  0000 L CNN
+F 1 "MountingHole" H 8100 4505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8000 4550 50  0001 C CNN
+F 3 "~" H 8000 4550 50  0001 C CNN
+	1    8000 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 643FA60D
+P 8000 4350
+F 0 "H2" H 8100 4396 50  0000 L CNN
+F 1 "MountingHole" H 8100 4305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8000 4350 50  0001 C CNN
+F 3 "~" H 8000 4350 50  0001 C CNN
+	1    8000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 643FA39C
+P 8000 4750
+F 0 "H4" H 8100 4796 50  0000 L CNN
+F 1 "MountingHole" H 8100 4705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8000 4750 50  0001 C CNN
+F 3 "~" H 8000 4750 50  0001 C CNN
+	1    8000 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 643FA15B
+P 8000 5150
+F 0 "H6" H 8100 5196 50  0000 L CNN
+F 1 "MountingHole" H 8100 5105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8000 5150 50  0001 C CNN
+F 3 "~" H 8000 5150 50  0001 C CNN
+	1    8000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 643F9F0C
+P 8000 4950
+F 0 "H5" H 8100 4996 50  0000 L CNN
+F 1 "MountingHole" H 8100 4905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8000 4950 50  0001 C CNN
+F 3 "~" H 8000 4950 50  0001 C CNN
+	1    8000 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 643EF0B3
+P 8000 4150
+F 0 "H1" H 8100 4196 50  0000 L CNN
+F 1 "MountingHole" H 8100 4105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8000 4150 50  0001 C CNN
+F 3 "~" H 8000 4150 50  0001 C CNN
+	1    8000 4150
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 9350 4300 800  800 
+U 616F6677
+F0 "matrix" 50
+F1 "matrix.sch" 50
+$EndSheet
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 6443F71B
+P 8000 5350
+F 0 "H7" H 8100 5396 50  0000 L CNN
+F 1 "MountingHole" H 8100 5305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8000 5350 50  0001 C CNN
+F 3 "~" H 8000 5350 50  0001 C CNN
+	1    8000 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 6443FAD9
+P 8000 5550
+F 0 "H8" H 8100 5596 50  0000 L CNN
+F 1 "MountingHole" H 8100 5505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8000 5550 50  0001 C CNN
+F 3 "~" H 8000 5550 50  0001 C CNN
+	1    8000 5550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
