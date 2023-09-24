@@ -2195,8 +2195,6 @@ F 3 "" H 8425 4675 60  0001 C CNN
 $EndComp
 Connection ~ 9550 5050
 Wire Wire Line
-	9350 3900 9350 4650
-Wire Wire Line
 	8250 5050 8900 5050
 Wire Wire Line
 	9350 3050 9350 4650
